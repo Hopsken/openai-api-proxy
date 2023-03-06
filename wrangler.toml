@@ -1,0 +1,6 @@
+name = "openai-api-proxy"
+main = "src/index.ts"
+compatibility_date = "2023-03-06"
+
+[vars]
+OPENAI_API_KEY=""
