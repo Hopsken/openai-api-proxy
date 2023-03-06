@@ -5,6 +5,8 @@
 
 > Proxy OpenAI API via Cloudflare Workers for secure, fast, and global access to language processing capabilities.
 
+## One Click Deploy
+
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/hopsken/openai-api-proxy)
 
 ## Install
