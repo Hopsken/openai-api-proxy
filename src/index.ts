@@ -13,6 +13,19 @@ export default {
     const url = new URL(request.url)
     const upstreamUrl = new URL(upstream)
 
+    if (request.method === 'OPTIONS') {
+      const response = new Response(null, {
+        status: 200,
+      })
+      response.headers.set(
+        'Access-Control-Allow-Headers',
+        'authorization,content-type'
+      )
+      response.headers.set('Access-Control-Allow-Methods', 'GET, OPTIONS, POST')
+      response.headers.set('Access-Control-Allow-Origin', '*')
+      return response
+    }
+
     const override_headers = new Headers(request.headers)
 
     // used predefined OPENAI_API_KEY
